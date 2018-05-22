@@ -1,0 +1,22 @@
+From: Kornel <kornel@geekhood.net>
+Date: Sat, 3 Mar 2018 22:21:25 +0000
+Subject: OpenMP on Debian doesn't work
+
+---
+ Cargo.toml | 3 ---
+ 1 file changed, 3 deletions(-)
+
+diff --git a/Cargo.toml b/Cargo.toml
+index 36a1095..724595e 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -12,9 +12,6 @@ readme = "README.md"
+ repository = "https://github.com/ImageOptim/gifski"
+ version = "0.8.2"
+ 
+-[package.metadata.deb]
+-features = ["openmp"]
+-
+ [[bin]]
+ doctest = false
+ name = "gifski"

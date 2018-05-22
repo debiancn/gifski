@@ -1,0 +1,26 @@
+From: scribblemaniac <scribblemaniac@users.noreply.github.com>
+Date: Fri, 23 Mar 2018 17:33:29 -0600
+Subject: Add instructions for OpenMP support with Homebrew
+
+---
+ README.md | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/README.md b/README.md
+index 7688c02..489cab2 100644
+--- a/README.md
++++ b/README.md
+@@ -14,7 +14,7 @@ See [releases](https://github.com/ImageOptim/gifski/releases) page for executabl
+ 
+ If you have [Rust](https://www.rust-lang.org/install.html), you can also get it with `cargo install gifski`. Run `cargo build --release --features=openmp` to build from source.
+ 
+-If you have [Homebrew](https://brew.sh/), you can also get it with `brew install gifski`.
++If you have [Homebrew](https://brew.sh/), you can also get it with `brew install gifski`. Add the `--with-openmp` argument if you want to enable OpenMP support.
+ 
+ ## Usage
+ 
+@@ -69,4 +69,3 @@ cargo build --release
+ ```
+ 
+ and link with `target/release/libgifski.a`. Please observe the [LICENSE](LICENSE).
+-

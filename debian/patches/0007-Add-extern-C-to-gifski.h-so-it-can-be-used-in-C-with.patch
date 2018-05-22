@@ -1,0 +1,34 @@
+From: Mario Zechner <contact@badlogicgames.com>
+Date: Mon, 7 May 2018 21:26:47 +0200
+Subject: Add extern "C" to gifski.h so it can be used in C++ without
+ modification (#40)
+
+---
+ gifski.h | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/gifski.h b/gifski.h
+index e60ec74..ea86da6 100644
+--- a/gifski.h
++++ b/gifski.h
+@@ -2,6 +2,11 @@
+ #include <stdlib.h>
+ #include <stdbool.h>
+ 
++
++#ifdef __cplusplus
++extern "C" {
++#endif
++
+ struct gifski;
+ typedef struct gifski gifski;
+ 
+@@ -193,3 +198,7 @@ GifskiError gifski_write(gifski *handle, const char *destination);
+  * Call to free all memory
+  */
+ void gifski_drop(gifski *g);
++
++#ifdef __cplusplus
++}
++#endif
+\ No newline at end of file

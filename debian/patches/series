@@ -1,0 +1,8 @@
+0001-OpenMP-on-Debian-doesn-t-work.patch
+0002-Make-static-OpenMP-linking-opt-in.patch
+0003-Updated-spelling-in-README.md.patch
+0004-Add-instructions-for-OpenMP-support-with-Homebrew.patch
+0005-Optional-system-allocator.patch
+0006-Update-dependencies.patch
+0007-Add-extern-C-to-gifski.h-so-it-can-be-used-in-C-with.patch
+0008-Reorg-readme.patch
